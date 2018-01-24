@@ -28,13 +28,17 @@ public class Click : MonoBehaviour {
 
             if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out rayHit, Mathf.Infinity, clickablesLayer))
             {
-
                 Debug.Log(rayHit.collider.gameObject.name);
-                rayHit.collider.GetComponent<spawnPoint>().CrossDoor(lisasimopson);
-
-
+              
+                if (rayHit.collider.GetComponent<spawnPoint>() != null)
+                   
+                {
+                    Debug.Log(rayHit.collider.gameObject.name);
+                    rayHit.collider.GetComponent<spawnPoint>().CrossDoor(lisasimopson);
+                }
             }
-        }
+
+       }
     }
     void Update()
     {
