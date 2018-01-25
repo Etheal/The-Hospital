@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: e570e293b7cc7084284b281dbea48460
+timeCreated: 1516731341
+licenseType: Free
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - puntero: {fileID: 2800000, guid: ba8ededb5870f2f4d83d4fdd87075e7b, type: 3}
+  - coger: {fileID: 2800000, guid: 2fff5325f8d4aa245b6eba81c47864d7, type: 3}
+  - puerta: {fileID: 2800000, guid: 34a7a2aad7fd723488943bcd06efa5d9, type: 3}
+  - examinar: {fileID: 2800000, guid: bb45bf08d0d7bff49aca17c4b6c87c2e, type: 3}
+  - hablar: {fileID: 2800000, guid: 9b940e552126e3e4483ceb382f12cb67, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
