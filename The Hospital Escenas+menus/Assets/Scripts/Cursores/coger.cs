@@ -18,12 +18,12 @@ public class coger : MonoBehaviour {
 
     void OnMouseEnter()
     {
-        cursor.setCoger();
+        cursor.SetCoger();
     }
 
     void OnMouseExit()
     {
-        cursor.setPuntero();
+        cursor.SetPuntero();
     }
 
 }

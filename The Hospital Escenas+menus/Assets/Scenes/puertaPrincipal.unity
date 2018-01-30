@@ -113,47 +113,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &1117082952
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1117082953}
-  - component: {fileID: 1117082954}
-  m_Layer: 0
-  m_Name: muroIzq
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1117082953
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1117082952}
-  m_LocalRotation: {x: -0.00049692194, y: -0.37901494, z: -0.0033593862, w: 0.92538434}
-  m_LocalPosition: {x: -47.56, y: 0, z: 3.3}
-  m_LocalScale: {x: 100, y: 100, z: 100}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: -0.19900002, y: -44.545002, z: -0.335}
---- !u!65 &1117082954
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1117082952}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.0021818161, y: 0.024147633, z: 0.063842095}
-  m_Center: {x: -0.0007975578, y: 0.012113938, z: 0.024022989}
 --- !u!1001 &1444153108
 Prefab:
   m_ObjectHideFlags: 0
@@ -196,3 +155,26 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2985cc7c2ab1104448cd6114e00afae9, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1444153109 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1793113971735230, guid: 2985cc7c2ab1104448cd6114e00afae9,
+    type: 2}
+  m_PrefabInternal: {fileID: 1444153108}
+--- !u!114 &1444153110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1444153109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e570e293b7cc7084284b281dbea48460, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puntero: {fileID: 2800000, guid: ba8ededb5870f2f4d83d4fdd87075e7b, type: 3}
+  coger: {fileID: 2800000, guid: 2fff5325f8d4aa245b6eba81c47864d7, type: 3}
+  puerta: {fileID: 2800000, guid: 34a7a2aad7fd723488943bcd06efa5d9, type: 3}
+  examinar: {fileID: 2800000, guid: bb45bf08d0d7bff49aca17c4b6c87c2e, type: 3}
+  hablar: {fileID: 2800000, guid: 9b940e552126e3e4483ceb382f12cb67, type: 3}
+  cursorMode: 0
+  hotSpot: {x: 0, y: 0}

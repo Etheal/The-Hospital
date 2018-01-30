@@ -458,6 +458,7 @@ GameObject:
   - component: {fileID: 156775769}
   - component: {fileID: 156775768}
   - component: {fileID: 156775767}
+  - component: {fileID: 156775771}
   m_Layer: 0
   m_Name: hallToRoom
   m_TagString: Untagged
@@ -479,7 +480,7 @@ Transform:
   - {fileID: 693001855}
   - {fileID: 1268191238}
   m_Father: {fileID: 808058981}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &156775767
 MonoBehaviour:
@@ -493,8 +494,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _spawnPoint: {fileID: 1268191237}
-  sceneToUnload: 5
-  sceneToload: 6
+  sceneToUnload: 0
+  sceneToload: 0
+  fade: {fileID: 900312936}
 --- !u!65 &156775768
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -550,6 +552,17 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 156775765}
   m_Mesh: {fileID: 4300000, guid: 43af4ae1cd12cdd4395b1d69d3960210, type: 3}
+--- !u!114 &156775771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 156775765}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 809f778054ea0bd4287d72d7c37eda52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &163823465
 GameObject:
   m_ObjectHideFlags: 0
@@ -786,6 +799,7 @@ GameObject:
   - component: {fileID: 222790732}
   - component: {fileID: 222790734}
   - component: {fileID: 222790735}
+  - component: {fileID: 222790736}
   m_Layer: 0
   m_Name: almacenToPersonalDoor
   m_TagString: Untagged
@@ -878,6 +892,18 @@ MonoBehaviour:
   _spawnPoint: {fileID: 1373514643}
   sceneToUnload: 5
   sceneToload: 4
+  fade: {fileID: 900312936}
+--- !u!114 &222790736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 222790730}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 809f778054ea0bd4287d72d7c37eda52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &224381041
 GameObject:
   m_ObjectHideFlags: 0
@@ -1615,7 +1641,7 @@ Transform:
   m_LocalScale: {x: 1.000001, y: 1, z: 1.000001}
   m_Children: []
   m_Father: {fileID: 808058981}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: -227.939, z: 0}
 --- !u!65 &504681690
 BoxCollider:
@@ -1734,7 +1760,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 808058981}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!65 &543600834
 BoxCollider:
@@ -1964,6 +1990,7 @@ GameObject:
   m_Component:
   - component: {fileID: 687464374}
   - component: {fileID: 687464375}
+  - component: {fileID: 687464376}
   m_Layer: 0
   m_Name: PuertaPpal
   m_TagString: Untagged
@@ -2010,6 +2037,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 319.2879, y: 294.63043, z: 14.939376}
   m_Center: {x: -60.06299, y: 143.41562, z: 85.848335}
+--- !u!114 &687464376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 687464373}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 809f778054ea0bd4287d72d7c37eda52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &688366776
 GameObject:
   m_ObjectHideFlags: 0
@@ -2381,6 +2419,7 @@ GameObject:
   - component: {fileID: 768984820}
   - component: {fileID: 768984825}
   - component: {fileID: 768984824}
+  - component: {fileID: 768984826}
   m_Layer: 0
   m_Name: villaGateDoor
   m_TagString: Untagged
@@ -2402,6 +2441,7 @@ MonoBehaviour:
   _spawnPoint: {fileID: 880169370}
   sceneToUnload: 2
   sceneToload: 3
+  fade: {fileID: 900312936}
 --- !u!65 &768984821
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2479,6 +2519,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 40.291443, y: 312.30603, z: 39.4}
   m_Center: {x: 430.38177, y: 155.90593, z: 0}
+--- !u!114 &768984826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 768984819}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 809f778054ea0bd4287d72d7c37eda52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &797650661
 GameObject:
   m_ObjectHideFlags: 0
@@ -2492,6 +2543,7 @@ GameObject:
   - component: {fileID: 797650663}
   - component: {fileID: 797650665}
   - component: {fileID: 797650666}
+  - component: {fileID: 797650667}
   m_Layer: 0
   m_Name: personalToAlmacenDoor
   m_TagString: Untagged
@@ -2572,6 +2624,7 @@ MonoBehaviour:
   _spawnPoint: {fileID: 1136027462}
   sceneToUnload: 4
   sceneToload: 5
+  fade: {fileID: 900312936}
 --- !u!65 &797650666
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2584,6 +2637,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 92.00001, y: 225.5006, z: 18.001902}
   m_Center: {x: -0.000015258789, y: 113.25019, z: 0.00094985974}
+--- !u!114 &797650667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 797650661}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 809f778054ea0bd4287d72d7c37eda52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &808058978
 GameObject:
   m_ObjectHideFlags: 0
@@ -2658,6 +2722,7 @@ Transform:
   - {fileID: 1026502949}
   - {fileID: 1897949672}
   - {fileID: 1267277545}
+  - {fileID: 1117082953}
   - {fileID: 543600833}
   - {fileID: 1259510025}
   - {fileID: 504681689}
@@ -2954,6 +3019,87 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 894250968}
+--- !u!1 &900312932
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 900312933}
+  - component: {fileID: 900312935}
+  - component: {fileID: 900312934}
+  - component: {fileID: 900312936}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &900312933
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 900312932}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 27.269653, y: 17.554558, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1053242109}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &900312934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 900312932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &900312935
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 900312932}
+--- !u!114 &900312936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 900312932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a53b6bd806194c41a8c69620c9ea37b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidadFade: 1
 --- !u!1 &900622107
 GameObject:
   m_ObjectHideFlags: 0
@@ -3194,6 +3340,7 @@ GameObject:
   - component: {fileID: 1026502949}
   - component: {fileID: 1026502951}
   - component: {fileID: 1026502950}
+  - component: {fileID: 1026502952}
   m_Layer: 0
   m_Name: muroIzqPersonal
   m_TagString: Untagged
@@ -3229,6 +3376,7 @@ MonoBehaviour:
   _spawnPoint: {fileID: 173556517}
   sceneToUnload: 4
   sceneToload: 3
+  fade: {fileID: 900312936}
 --- !u!65 &1026502951
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3241,6 +3389,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.0021818161, y: 0.024147633, z: 0.063842095}
   m_Center: {x: -0.0007975578, y: 0.012113938, z: 0.024022989}
+--- !u!114 &1026502952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1026502948}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 809f778054ea0bd4287d72d7c37eda52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1045932218
 GameObject:
   m_ObjectHideFlags: 0
@@ -3388,6 +3547,7 @@ RectTransform:
   - {fileID: 1450039301}
   - {fileID: 2139572192}
   - {fileID: 1400940862}
+  - {fileID: 900312933}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3471,6 +3631,47 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1107459699}
   m_Mesh: {fileID: 4300020, guid: 708f0adc2ccb0674c8f34fe76bcff5f9, type: 3}
+--- !u!1 &1117082952
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1117082953}
+  - component: {fileID: 1117082954}
+  m_Layer: 0
+  m_Name: muroIzqPpal
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1117082953
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1117082952}
+  m_LocalRotation: {x: -0.00049692194, y: -0.37901494, z: -0.0033593862, w: 0.92538434}
+  m_LocalPosition: {x: 0.024399986, y: 0, z: 0.033}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 808058981}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: -0.19900002, y: -44.545002, z: -0.335}
+--- !u!65 &1117082954
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1117082952}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0021818161, y: 0.024147633, z: 0.063842095}
+  m_Center: {x: -0.0007975578, y: 0.012113938, z: 0.024022989}
 --- !u!1 &1128884766
 GameObject:
   m_ObjectHideFlags: 0
@@ -3675,7 +3876,7 @@ Transform:
   m_LocalScale: {x: 1.000001, y: 1, z: 1.000001}
   m_Children: []
   m_Father: {fileID: 808058981}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: -126.56601, z: 0}
 --- !u!65 &1259510026
 BoxCollider:
@@ -3699,8 +3900,9 @@ GameObject:
   - component: {fileID: 1267277545}
   - component: {fileID: 1267277547}
   - component: {fileID: 1267277546}
+  - component: {fileID: 1267277548}
   m_Layer: 0
-  m_Name: muroBot
+  m_Name: muroBotPpal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3734,6 +3936,7 @@ MonoBehaviour:
   _spawnPoint: {fileID: 1414061237}
   sceneToUnload: 3
   sceneToload: 2
+  fade: {fileID: 900312936}
 --- !u!65 &1267277547
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3744,8 +3947,19 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.002181816, y: 0.0114989625, z: 0.063842095}
-  m_Center: {x: -0.0007975578, y: 0.0022823764, z: 0.02402267}
+  m_Size: {x: 0.002181816, y: 0.015699925, z: 0.063842095}
+  m_Center: {x: -0.0007975578, y: 0.004382867, z: 0.024022644}
+--- !u!114 &1267277548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1267277544}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 809f778054ea0bd4287d72d7c37eda52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1268191237
 GameObject:
   m_ObjectHideFlags: 0
@@ -3787,6 +4001,7 @@ GameObject:
   - component: {fileID: 1323996604}
   - component: {fileID: 1323996606}
   - component: {fileID: 1323996607}
+  - component: {fileID: 1323996608}
   m_Layer: 0
   m_Name: hallToAlmacenDoor
   m_TagString: Untagged
@@ -3879,6 +4094,18 @@ MonoBehaviour:
   _spawnPoint: {fileID: 1208155443}
   sceneToUnload: 6
   sceneToload: 5
+  fade: {fileID: 900312936}
+--- !u!114 &1323996608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1323996602}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 809f778054ea0bd4287d72d7c37eda52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1349238287
 GameObject:
   m_ObjectHideFlags: 0
@@ -4494,6 +4721,7 @@ GameObject:
   - component: {fileID: 1604597184}
   - component: {fileID: 1604597186}
   - component: {fileID: 1604597187}
+  - component: {fileID: 1604597188}
   m_Layer: 0
   m_Name: almacenToHallDoor
   m_TagString: Untagged
@@ -4586,6 +4814,18 @@ MonoBehaviour:
   _spawnPoint: {fileID: 208570217}
   sceneToUnload: 5
   sceneToload: 6
+  fade: {fileID: 900312936}
+--- !u!114 &1604597188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1604597182}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 809f778054ea0bd4287d72d7c37eda52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1626114958
 GameObject:
   m_ObjectHideFlags: 0
@@ -4895,6 +5135,11 @@ Prefab:
       propertyPath: m_Name
       value: Sarah
       objectReference: {fileID: 0}
+    - target: {fileID: 114873094126772076, guid: 1229f4758f2569442b40b6fcb035b795,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1229f4758f2569442b40b6fcb035b795, type: 2}
   m_IsPrefabParent: 0
@@ -4988,6 +5233,7 @@ MonoBehaviour:
   _spawnPoint: {fileID: 0}
   sceneToUnload: 0
   sceneToload: 0
+  fade: {fileID: 900312936}
 --- !u!1 &1819447411
 GameObject:
   m_ObjectHideFlags: 0
@@ -5148,8 +5394,9 @@ GameObject:
   - component: {fileID: 1897949672}
   - component: {fileID: 1897949674}
   - component: {fileID: 1897949673}
+  - component: {fileID: 1897949675}
   m_Layer: 0
-  m_Name: muroDrcha
+  m_Name: muroDrchaPpal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5183,6 +5430,7 @@ MonoBehaviour:
   _spawnPoint: {fileID: 1680877233}
   sceneToUnload: 3
   sceneToload: 4
+  fade: {fileID: 900312936}
 --- !u!65 &1897949674
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5195,6 +5443,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.0021818161, y: 0.024147633, z: 0.063842095}
   m_Center: {x: -0.0007975578, y: 0.012113938, z: 0.024022989}
+--- !u!114 &1897949675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1897949671}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 809f778054ea0bd4287d72d7c37eda52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1904483247
 GameObject:
   m_ObjectHideFlags: 0

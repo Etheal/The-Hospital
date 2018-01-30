@@ -21,12 +21,12 @@ public class examinar : MonoBehaviour
 
     void OnMouseEnter()
     {
-        cursor.setExaminar();
+        cursor.SetExaminar();
     }
 
     void OnMouseExit()
     {
-        cursor.setPuntero();
+        cursor.SetPuntero();
     }
 
 }

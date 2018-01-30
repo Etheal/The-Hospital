@@ -50,6 +50,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 
             // get the third person character ( this should never be null due to require component )
             m_Character = GetComponent<ThirdPersonCharacter>();
+            Debug.Log(m_Character + " " + "encontrado");
         /**/
             if (!m_Jump)
             {
@@ -82,9 +83,11 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 			// walk speed multiplier
 	        if (Input.GetKey(KeyCode.LeftShift)) m_Move *= 0.5f;
 #endif
-
+            Debug.Log(1);
             // pass all parameters to the character control script
             m_Character.Move(m_Move, crouch, m_Jump);
+            Debug.Log(2);
+
             m_Jump = false;
         }
     }

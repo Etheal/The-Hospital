@@ -21,12 +21,12 @@ public class hablar : MonoBehaviour
 
     void OnMouseEnter()
     {
-        cursor.setHablar();
+        cursor.SetHablar();
     }
 
     void OnMouseExit()
     {
-        cursor.setPuntero();
+        cursor.SetPuntero();
     }
 
 }

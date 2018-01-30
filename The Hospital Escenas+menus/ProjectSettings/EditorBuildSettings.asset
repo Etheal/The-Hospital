@@ -21,7 +21,7 @@ EditorBuildSettings:
     path: Assets/Scenes/puertaPersonal.unity
     guid: 8fcab6cacec5851469869fc7e19f4420
   - enabled: 1
-    path: Assets/Scenes/almacen.unity
+    path: Assets/Scenes/Almacen.unity
     guid: 169b147b36abef6448797e73ab9096c1
   - enabled: 1
     path: Assets/Scenes/hallHospital.unity

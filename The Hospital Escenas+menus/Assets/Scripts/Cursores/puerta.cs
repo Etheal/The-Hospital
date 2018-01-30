@@ -8,22 +8,29 @@ public class puerta : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        cursor = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<cursor>();
+        cursor = GameObject.FindWithTag("MainCamera").GetComponent<cursor>();
+  
+        
+   
     }
 
     // Update is called once per frame
     void Update () {
-
+     if (cursor != null)
+        {
+            Debug.Log("caca");
+        }
+        
     }
 
     void OnMouseEnter()
     {
-        cursor.setPuerta();
+        cursor.SetPuerta();
     }
 
     void OnMouseExit()
     {
-        cursor.setPuntero();
+        cursor.SetPuntero();
     }
 
 }

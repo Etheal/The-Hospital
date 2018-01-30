@@ -22,26 +22,26 @@ public class cursor : MonoBehaviour {
 		
 	}
 
-    public void setPuntero() {
+    public void SetPuntero() {
         Cursor.SetCursor(puntero, hotSpot, cursorMode);
     }
 
-    public void setCoger()
+    public void SetCoger()
     {
         Cursor.SetCursor(coger, hotSpot, cursorMode);
     }
 
-    public void setPuerta()
+    public void SetPuerta()
     {
         Cursor.SetCursor(puerta, hotSpot, cursorMode);
     }
 
-    public void setExaminar()
+    public void SetExaminar()
     {
         Cursor.SetCursor(examinar, hotSpot, cursorMode);
     }
 
-    public void setHablar()
+    public void SetHablar()
     {
         Cursor.SetCursor(hablar, hotSpot, cursorMode);
     }
