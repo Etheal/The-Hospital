@@ -1171,11 +1171,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e570e293b7cc7084284b281dbea48460, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  puntero: {fileID: 2800000, guid: ba8ededb5870f2f4d83d4fdd87075e7b, type: 3}
-  coger: {fileID: 2800000, guid: 2fff5325f8d4aa245b6eba81c47864d7, type: 3}
-  puerta: {fileID: 2800000, guid: 34a7a2aad7fd723488943bcd06efa5d9, type: 3}
-  examinar: {fileID: 2800000, guid: bb45bf08d0d7bff49aca17c4b6c87c2e, type: 3}
-  hablar: {fileID: 2800000, guid: 9b940e552126e3e4483ceb382f12cb67, type: 3}
+  puntero: {fileID: 2800000, guid: 155d07f4c33aa2f4fa2bda61ebbd9619, type: 3}
+  coger: {fileID: 2800000, guid: 58c7ad61f244e91478bfd632b5b12ff1, type: 3}
+  puerta: {fileID: 2800000, guid: 8df71f89295278147932876d0434bedc, type: 3}
+  examinar: {fileID: 2800000, guid: 8ab08f1bc35d4db458ce08b544cfa263, type: 3}
+  hablar: {fileID: 2800000, guid: a670498f66ce4cc449e4daa18566cf24, type: 3}
+  derecha: {fileID: 2800000, guid: b123c801cf1d7194780f321e72c10358, type: 3}
+  izquierda: {fileID: 2800000, guid: 9f0537f1604207545ab90e4a06fbc67b, type: 3}
+  abajo: {fileID: 2800000, guid: 4c68e6578b72dc44ebcd40ba6a58847c, type: 3}
+  puzzle: {fileID: 2800000, guid: 5217a61a17c35344d8edc7dbb9f1be85, type: 3}
   cursorMode: 0
   hotSpot: {x: 0, y: 0}
 --- !u!1 &585137521
@@ -2325,8 +2329,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 179.1674, y: 17.389324, z: 105.329445}
-  m_Center: {x: -5.668023, y: 3.3708625, z: 20.560404}
+  m_Size: {x: 183.88464, y: 25.81295, z: 105.329445}
+  m_Center: {x: -8.02663, y: 4.599448, z: 20.560411}
 --- !u!114 &1003402220
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2335,9 +2339,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1003402215}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a78195c564ece4c4e8005b5cc2b4e360, type: 3}
+  m_Script: {fileID: 11500000, guid: 0b1e8b273e47db74c97643fec7e1aee9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puntero: 1
 --- !u!1 &1013647236
 GameObject:
   m_ObjectHideFlags: 0
@@ -2398,7 +2403,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 021b544e4e2ff824288e0ce65081be4e, type: 2}
+  - {fileID: 2100000, guid: bfb647dd69469c24584a794ba8a75437, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3262,6 +3267,7 @@ GameObject:
   - component: {fileID: 1497487073}
   - component: {fileID: 1497487075}
   - component: {fileID: 1497487074}
+  - component: {fileID: 1497487077}
   - component: {fileID: 1497487076}
   m_Layer: 0
   m_Name: Door
@@ -3299,7 +3305,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 05f475ab198a37e44aea9135c5d24fd3, type: 2}
+  - {fileID: 2100000, guid: 0f5317a949e9fe34b8340dd88d809b22, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3335,9 +3341,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 1497487072}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 809f778054ea0bd4287d72d7c37eda52, type: 3}
+  m_Script: {fileID: 11500000, guid: 0b1e8b273e47db74c97643fec7e1aee9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puntero: 2
+--- !u!65 &1497487077
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1497487072}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 91.99999, y: 225.5006, z: 18.001898}
+  m_Center: {x: 0, y: 113.25019, z: 0.00082778925}
 --- !u!1 &1512695854
 GameObject:
   m_ObjectHideFlags: 0
@@ -3473,7 +3492,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 021b544e4e2ff824288e0ce65081be4e, type: 2}
+  - {fileID: 2100000, guid: bfb647dd69469c24584a794ba8a75437, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3976,8 +3995,8 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 49.329758
-  m_Center: {x: -29.285103, y: 9.198996, z: 313.73578}
+  m_Radius: 131.2282
+  m_Center: {x: -29.769468, y: 31.933819, z: 284.32684}
 --- !u!114 &1692268319
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3986,9 +4005,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1692268314}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 544de34ff1f67a54ebb4e833a49de794, type: 3}
+  m_Script: {fileID: 11500000, guid: 0b1e8b273e47db74c97643fec7e1aee9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puntero: 0
 --- !u!1 &1723869629
 GameObject:
   m_ObjectHideFlags: 0
@@ -4086,9 +4106,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1723869629}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 544de34ff1f67a54ebb4e833a49de794, type: 3}
+  m_Script: {fileID: 11500000, guid: 0b1e8b273e47db74c97643fec7e1aee9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puntero: 0
 --- !u!1 &1730460902
 GameObject:
   m_ObjectHideFlags: 0
@@ -4186,9 +4207,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1730460902}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 544de34ff1f67a54ebb4e833a49de794, type: 3}
+  m_Script: {fileID: 11500000, guid: 0b1e8b273e47db74c97643fec7e1aee9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puntero: 0
 --- !u!1 &1733402267
 GameObject:
   m_ObjectHideFlags: 0
@@ -4474,7 +4496,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 4a9bbf00fab59b6479e5da06a69b7a0c, type: 2}
+  - {fileID: 2100000, guid: c200096c6f0a4974c8ef2ea5bb8ee7f0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4999,7 +5021,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 05f475ab198a37e44aea9135c5d24fd3, type: 2}
+  - {fileID: 2100000, guid: 0f5317a949e9fe34b8340dd88d809b22, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5338,6 +5360,7 @@ GameObject:
   - component: {fileID: 2094872856}
   - component: {fileID: 2094872858}
   - component: {fileID: 2094872857}
+  - component: {fileID: 2094872860}
   - component: {fileID: 2094872859}
   m_Layer: 0
   m_Name: Informe1
@@ -5411,9 +5434,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 2094872855}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a78195c564ece4c4e8005b5cc2b4e360, type: 3}
+  m_Script: {fileID: 11500000, guid: 0b1e8b273e47db74c97643fec7e1aee9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puntero: 1
+--- !u!65 &2094872860
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2094872855}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 175.17921, y: 35.9383, z: 119.56583}
+  m_Center: {x: -54.73368, y: 2.3359327, z: -37.824562}
 --- !u!1 &2123725896
 GameObject:
   m_ObjectHideFlags: 0
